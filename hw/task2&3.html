@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS</title>
+  </head>
+  <body>
+    <p>SenseyZomboLunt</p>
+    <script>
+        
+      let shop = [
+        ["apple", 10, 2],
+        ["pen", 20, 3],
+        ["pineapple", 30, 4],
+      ];
+
+      let basketUsers = shop.reduce(
+        (accum, item) => accum + item[1] * item[2],
+        0
+      );
+
+      console.log(basketUsers);
+    </script>
+  </body>
+</html>
